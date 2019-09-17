@@ -1,0 +1,48 @@
+import os
+print ("**********CALCULADORA DE BASES NUMERICAS**********")
+print ("(1)Suma.                 (2)Resta.")
+print ("(3)Division.             (4)Multiplicacion.")
+op=int(input("Elige una opcion:"))    
+if op is 1:
+    os.system("cls")
+    n1= int(input("ingrese el primer numero:"))
+    base1=int(input("Ingresa la base del numero:"))
+    n2= (input("ingrese el segundo numero:"))
+    base2=(input("Ingresa la base del numero:"))
+    de2=int
+    if base1==2:
+        de1=int(str(n1), 2)
+        if base2==2:
+            de2=(int(str(n2), 2))
+        elif base2==8:
+            de2=int(str(n2), 8)
+        elif base2==10:
+            de2=int(n2)
+
+        print (str(de2))
+
+    elif base1==8:
+        de1=(int(str(n1), 8))
+        if base2==2:
+            de2=(int(str(n2), 2))
+        elif base2==8:
+            de2=int(str(n2), 8)
+        elif base2==10:
+            de2=int(n2)
+
+        print (str(de2))
+    elif base1==10:
+        de1=n1
+    else:
+        resultado=de1+de2
+        #print(resultado)
+elif op is 2:
+    n1= int(input("ingrese el primer numero:"))
+    base1=int(input("Ingresa la base del numero:"))
+elif op is 3:
+    n1= int(input("ingrese el primer numero:"))
+    base1=int(input("Ingresa la base del numero:"))
+elif op is 4:
+    n1= int(input("ingrese el primer numero:"))
+    base1=int(input("Ingresa la base del numero:"))
+        
